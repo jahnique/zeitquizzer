@@ -1,2 +1,11 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+%h1 ZEIT Quiz-Ranking
+- @quizzers.each do |quizzer|
+  %h2=quizzer.name
+  %table.table.table-striped
+    %tr
+      %th.span1 Datum
+      %th.span1 Punkte
+    - quizzer.scores.each do |score|
+      %tr
+        %td= I18n.l score.created_at, format: "%d. %b %Y"
+        %td= score.value

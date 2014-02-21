@@ -12,7 +12,9 @@ gem 'figaro'
 gem 'haml-rails'
 gem 'mysql2'
 gem 'simple_form'
+gem 'i18n'
 group :development do
+  gem 'pry'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'html2haml'
