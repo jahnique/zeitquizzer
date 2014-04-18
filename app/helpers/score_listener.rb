@@ -1,6 +1,5 @@
 module ScoreListener
   require 'webrick'
-  require 'pry'
 
   def self.start_listener
     root = File.expand_path '~/Desktop/'
