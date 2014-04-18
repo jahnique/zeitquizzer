@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.1.0'
-gem 'rails', '4.0.2'
+gem 'rails', '4.1'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -13,6 +13,12 @@ gem 'haml-rails'
 gem 'mysql2'
 gem 'simple_form'
 gem 'i18n'
+
+gem 'capistrano', '~> 3.1.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1.1'
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
+
 group :development do
   gem 'pry'
   gem 'better_errors'
