@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 module ScoreListener
   require 'webrick'
 
@@ -20,3 +22,5 @@ module ScoreListener
     q.scores << s
   end
 end
+
+ScoreListener.start_listener
