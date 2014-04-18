@@ -1,7 +1,10 @@
-#!/usr/bin/env ruby
+require 'webrick'
 
-module ScoreListener
-  require 'webrick'
+namespace :listener do
+  desc "Starts the score listener"
+  task :start => :environment do
+    puts "Start score listener: #{start_listener}"
+  end
 
   def self.start_listener
     root = File.expand_path '~/Desktop/'
@@ -23,4 +26,3 @@ module ScoreListener
   end
 end
 
-ScoreListener.start_listener
