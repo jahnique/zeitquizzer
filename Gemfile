@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'figaro'
 gem 'haml-rails'
-gem 'mysql2'
+gem 'pg'
 gem 'simple_form'
 gem 'i18n'
 
@@ -28,9 +28,11 @@ group :development do
   gem 'capistrano-rails', '~> 1.1.1'
   gem 'capistrano-rbenv', github: "capistrano/rbenv"
 end
+
 group :development, :test do
   gem 'rspec-rails'
 end
+
 group :test do
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
